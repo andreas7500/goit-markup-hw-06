@@ -3,6 +3,7 @@
   --secondary-text-color: #ffffff;
   --owner-text-color: #757575;
   --accent-color: #2196f3;
+  --focus-btn:#188ce8;
   --contener-color: #eeeeee;
   --logo-color-text: #000000;
   --buttons-port-color: #f5f4fa;
@@ -225,17 +226,16 @@ p {
   color: var(--background-color);
   background: var(--accent-color);
   cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   transition: color 250ms var(--cubic);
 }
-.hero-btn.button {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-}
+
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--focus-btn);
 }
 
 /* section2 */
@@ -567,16 +567,16 @@ p {
   padding-top: 0;
   padding-bottom: 0;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--background-color);
   border-radius: 4px;
   cursor: pointer;
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 .footer-form-btn:hover,
 .footer-form-btn:focus {
-  background: #188ce8;
+  background-color: var(--focus-btn);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -616,6 +616,7 @@ p {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  border: none;
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
     box-shadow 250ms var(--cubic);
 }
@@ -769,16 +770,18 @@ p {
   text-align: center;
   color: var(--main-text-color);
 }
+ .modal-form-all{
+  margin-bottom: 20px;
+} 
 .modal-form-label {
   display: block;
-  font-size: 16px;
-  margin-bottom: 10px;
+  
+  margin-bottom: 4px;
 
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-
   color: #757575;
 }
 .modal-form-wrapper {
@@ -817,24 +820,22 @@ p {
 .modal-form-message {
   display: block;
   width: 100%;
-  height: 96px;
-  margin-bottom: 20px;
+  height: 120px;  
   resize: none;
-  padding: 14px 20px;
+  padding: 12px 16px;   
  
-font-weight: 400;
-font-size: 12px;
-line-height: 1.16px;
-letter-spacing: 0.01em;
-color: rgba(117, 117, 117, 0.5);
-
-
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: 1px solid transparent;
   outline-offset: -1px;
   transition: outline 250ms var(--cubic), box-shadow 250ms var(--cubic), color 250ms var(--cubic);
+}
+.modal-form-message::placeholder{ 
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
 }
 .modal-form-message:focus {
   outline: 1px solid #2196f3;
@@ -859,17 +860,16 @@ color: rgba(117, 117, 117, 0.5);
   user-select: none;
 }
 .modal-form-link {
-  color: #2196f3;
+  color: var(--accent-color);
   text-underline-offset: 3px;
 }
 .modal-form-checkbox {
   appearance: none;
   width: 16px;
   height: 15px;
-
   outline: 2px solid transparent;
   outline-offset: -2px;
-  border: 2px solid #212121;
+  border: 2px solid var(--main-text-color);
   border-radius: 2px;
   background-repeat: no-repeat;
   background-position: center;
@@ -898,15 +898,16 @@ color: rgba(117, 117, 117, 0.5);
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--background-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   cursor: pointer;
-  transition: color 250ms var(--cubic), box-shadow 250ms var(--cubic);
-
+  transition:  background-color 250ms var(--cubic), 
+  box-shadow 250ms var(--cubic);
+  border: none;
   border-radius: 4px;
 }
 
 .modal-form-btn:hover,
 .modal-form-btn:focus {
-  background: #188ce8;
+  background-color: var(--focus-btn);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
